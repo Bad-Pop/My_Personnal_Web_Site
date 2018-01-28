@@ -1,0 +1,26 @@
+.experience{
+    margin-top: 1em;
+    transition: 1s ease;
+    /*background-color: #eff2f6;*/
+}
+
+.experience:hover{
+    margin-top: 1em;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.06);
+    transition: 1s ease;
+    box-shadow: 1px 2px 4px rgba(44, 62, 80, .5);
+}
+
+.job-title{
+    font-size: 17px;
+}
+
+.company{
+    font-weight: 400;
+}
+
+.job-description{
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif!important;
+}

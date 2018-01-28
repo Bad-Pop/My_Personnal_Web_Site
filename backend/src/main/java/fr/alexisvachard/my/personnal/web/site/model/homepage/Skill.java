@@ -17,12 +17,16 @@ public class Skill {
     @NotNull
     private int masteryLevel;
 
+    @NotNull
+    private int importance;
+
     public Skill() {
     }
 
-    public Skill(String skillName, int masteryLevel) {
+    public Skill(String skillName, int masteryLevel, int importance) {
         this.skillName = skillName;
         this.masteryLevel = masteryLevel;
+        this.importance = importance;
     }
 
     public String getSkillName() {
@@ -39,5 +43,13 @@ public class Skill {
 
     public void setMasteryLevel(int masteryLevel) {
         this.masteryLevel = masteryLevel;
+    }
+
+    public int getImportance() {
+        return importance;
+    }
+
+    public void setImportance(int importance) {
+        this.importance = importance;
     }
 }

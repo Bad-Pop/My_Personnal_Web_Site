@@ -7,8 +7,8 @@ import java.util.List;
 
 public interface SkillRepository extends CrudRepository<Skill, String> {
 
-    @Override
-    List<Skill> findAll();
+//    @Override
+    List<Skill> findAllByOrderByImportanceAsc();
 
     Skill deleteBySkillName(String skillName);
 }

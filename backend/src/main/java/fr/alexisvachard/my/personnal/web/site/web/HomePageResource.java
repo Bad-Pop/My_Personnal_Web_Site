@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 @CrossOrigin(maxAge = 3600)
 @RestController
@@ -38,7 +39,7 @@ public class HomePageResource {
     }
 
     @GetMapping
-    public ResponseEntity<HomePage> getHomePage() throws HomePageException {
+    public ResponseEntity<HomePage> getHomePage() throws HomePageException, InterruptedException {
 
         List<Skill> skills = skillService.findAll();
         List<Diploma> diplomas = diplomaService.findAll();
